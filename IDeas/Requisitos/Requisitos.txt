@@ -1,0 +1,41 @@
+1. Análisis de Requisitos y Objetivos del Proyecto
+Objetivos de la aplicación web:
+
+Crear una experiencia de compra inmersiva para los fans del cine de terror y la música heavy metal.
+Facilitar la navegación y compra de productos, desde ropa y pósters hasta música en formato físico.
+Desarrollar un sitio visualmente atractivo que refleje la estética oscura y temática de horror/heavy metal.
+Proporcionar una estructura optimizada y responsive que permita un buen rendimiento en diferentes dispositivos.
+
+Requisitos funcionales:
+
+Catálogo de productos: Debe mostrar productos categorizados (Ropa, Pósters, Música, etc.) con imágenes, descripciones, precios, y una opción de "Añadir al carrito".
+Búsqueda y filtrado: Debe permitir a los usuarios buscar productos específicos y filtrarlos por categorías y precios.
+Carrito de compra: Función para agregar productos al carrito, revisar la cantidad, ver subtotales y realizar el pago.
+Autenticación: Registro e inicio de sesión de usuarios para seguimiento de pedidos y personalización de la experiencia de compra.
+Reseñas y valoraciones: Sección para que los usuarios puedan dejar y ver reseñas de productos.
+
+Requisitos no funcionales:
+
+Rendimiento: La página debe cargar rápidamente y ser optimizada para distintos dispositivos.
+Seguridad: medidas de seguridad para proteger los datos de los usuarios y las transacciones
+Escalabilidad: La aplicación debe poder manejar el aumento de usuarios y productos sin perder rendimiento.
+Estética: Mantener una coherencia visual que respalde la atmósfera de horror y metal, con colores oscuros y un diseño atractivo.
+
+Tecnologías propuestas y justificación:
+
+
+HTML5 estructurar el contenido semántico 
+
+CSS3  flexibilidad + efectos visuales
+
+JavaScript interactividad (frameworks como React o Vue.js se facilita la creación de componentes reutilizables, perfectos para un e-commerce)
+
+Backend: Node.js con Express o Django:
+Node.js ofrece eficiencia y escalabilidad, adecuado para gestionar múltiples usuarios simultáneos.
+Express permite una configuración rápida y eficiente del backend.
+Django podría ser otra opción robusta con características de seguridad integradas.
+Base de datos: MongoDB o MySQL:
+Otros: 
+Balsamiq (wireframes)
+Git (control de versiones)
+Cypress (testing)
