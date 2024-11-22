@@ -2,7 +2,7 @@
 
 
 body {
-    background-image: url(imágenes/fondo.jpg);
+    background-color: black;
     background-size: cover; /* Hace que la imagen cubra toda la pantalla */
     background-position: center bottom; /* Centra la imagen en la pantalla */
     background-attachment: fixed; /* Hace que la imagen no se mueva cuando se haga scroll */
@@ -23,7 +23,7 @@ header img {
 }
 
 /* Barra de búsqueda */
-section input[type="text"] {
+a input[type="text"] {
     display: block;
     margin: 1rem auto; /* Centra horizontalmente */
     width: 50%;
@@ -87,6 +87,7 @@ main h2 {
     text-align: center;
     font-size: 1.5rem;
     margin-bottom: 1rem;
+    color: red;
 }
 
 /* Listas de artículos y ofertas */
@@ -125,29 +126,117 @@ main ul li span {
     margin-top: 0.5rem;
 }
 
-.articulo {
-    width: 150px;
-    height: 150px;
-    border: 1px solid #ccc;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-    
-.articulo1 {
-    background-image: url('rob-zombie.jpg');
+/* Contenedor de los productos */
+/* Contenedor de los productos */
+/* Contenedor de productos */
+.product-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr)); /* Espacio mínimo menor */
+    gap: 1.2rem; /* Incrementar ligeramente el espacio entre productos */
+    padding: 1.5rem;
 }
 
-.articulo2 {
-    background-image: url('imagen2.jpg');
+
+/* Estilos de cada producto */
+/* Contenedor de los productos */
+.product-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(12rem, 1fr)); /* Reducir tamaño mínimo a 12rem */
+    gap: 2rem; /* Reducir espacio entre productos */
+    padding: 1rem;
 }
 
-.articulo3 {
-    background-image: url('imagen3.jpg');
+.product-item {
+    padding: 0.6rem; /* Reducir el relleno interno */
+    border-radius: 0.3rem;
+    box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.1); /* Sombras más ligeras */
 }
 
-.articulo4 {
-    background-image: url('imagen4.jpg');
+/* Tamaño general de los botones */
+nav ul li button {
+    padding: 0.3rem 0.6rem; /* Botones más pequeños */
+    font-size: 0.8rem; /* Reducir el texto */
+}
+.product-item:hover {
+    transform: scale(1.03); /* Efecto hover más sutil */
+    box-shadow: 0 0.8rem 1.6rem rgba(0, 0, 0, 0.2);
+}
+
+/* Imagen del producto */
+.product-item img {
+    width: 80%; /* Reducir tamaño al 80% del ancho del contenedor */
+    margin: 0 auto;
+    aspect-ratio: 1 / 1;
+    object-fit: contain; /* Mantener proporciones */
+    background-color: transparent;
+}
+
+/* Título del producto */
+.product-title {
+    font-size: 0.9rem; /* Reducir tamaño del texto */
+    color: #333;
+    padding: 0.6rem;
+}
+
+/* Precio y detalles */
+.product-details {
+    font-size: 0.8rem; /* Reducir tamaño del texto */
+    color: #555;
+    margin-bottom: 0.8rem;
+}
+
+/* Encabezado principal (Artículos Recomendados para Ti) */
+.main-title {
+    display: inline-block;
+    background-color: #f4f4f4;
+    color: #333;
+    font-size: 1.2rem; /* Reducir tamaño del texto */
+    font-weight: bold;
+    padding: 0.6rem 1.2rem; /* Ajustar espaciado interno */
+    border-radius: 0.4rem;
+    box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.1); /* Sombra más sutil */
+    text-align: center;
+    margin: 1.5rem auto;
+}
+
+/* Ajuste general del body */
+body {
+    background-color: black;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Barra de búsqueda */
+a input[type="text"] {
+    width: 40%; /* Reducir ancho de la barra */
+    padding: 0.4rem; /* Reducir espaciado interno */
+    font-size: 0.9rem; /* Reducir tamaño del texto */
+}
+
+/* Tamaño general de los botones */
+nav ul li button {
+    padding: 0.3rem 0.6rem; /* Botones más pequeños */
+    font-size: 0.8rem; /* Reducir el texto */
+}
+.product-item:hover {
+    transform: scale(1.03); /* Efecto hover más sutil */
+    box-shadow: 0 0.8rem 1.6rem rgba(0, 0, 0, 0.2);
+}
+
+/* Ajustar lista de artículos */
+main ul li {
+    width: 120px; /* Contenedor más pequeño */
+    height: 120px;
+    font-size: 0.8rem; /* Reducir tamaño de texto */
+    border-radius: 0.4rem; /* Bordes más suaves */
+}
+
+/* Hover más discreto */
+main ul li:hover {
+    border-color: #007BFF;
+    color: #007BFF;
 }
 
 /* Estilo general para el nav y los botones */
