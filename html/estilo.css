@@ -1,11 +1,9 @@
 /* Estilos generales */
-
-
 body {
     background-color: black;
-    background-size: cover; /* Hace que la imagen cubra toda la pantalla */
-    background-position: center bottom; /* Centra la imagen en la pantalla */
-    background-attachment: fixed; /* Hace que la imagen no se mueva cuando se haga scroll */
+    background-size: cover;
+    background-position: center bottom;
+    background-attachment: fixed;
     font-family: Arial, sans-serif;
     height: 100vh;
     margin: 0;
@@ -17,7 +15,7 @@ body {
 header img {
     width: 100%;
     height: auto;
-    background-size:auto;
+    background-size: auto;
     background-position: center;
     overflow: scroll;
 }
@@ -25,17 +23,15 @@ header img {
 /* Barra de búsqueda */
 a input[type="text"] {
     display: block;
-    margin: 1rem auto; /* Centra horizontalmente */
+    margin: 1rem auto;
     width: 50%;
-    padding: 0.5rem;
+    padding: 0.625rem 1.25rem;
     font-size: 1rem;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    background-color: red; /* Fondo rojo */
-    color: white; /* Texto blanco */
-    border: 2px solid black; /* Borde negro */
-    padding: 10px 20px; /* Espaciado interno */
-    font-size: 16px; /* Tamaño del texto */
+    border: 0.125rem solid black;
+    border-radius: 0.313rem;
+    background-color: red;
+    color: white;
+    border: 0.125rem solid black;
 }
 
 /* Botones debajo de la barra de búsqueda */
@@ -51,15 +47,18 @@ nav ul {
 nav ul li button {
     padding: 0.5rem 1rem;
     font-size: 1rem;
-    background-color: #007BFF;
+    background-color: red;
     color: #fff;
     border: none;
-    border-radius: 5px;
+    border-radius: 0.313rem;
     cursor: pointer;
+    transition: background-color 0.2s ease, color 0.2s ease;
 }
 
 nav ul li button:hover {
-    background-color: #0056b3;
+    background-color: white;
+    color: red
+
 }
 
 /* Contenedor principal con columnas */
@@ -69,7 +68,7 @@ section {
 
 aside {
     width: 10%;
-    background-image: url('side-image.jpg'); /* Cambia esta ruta por la de tu imagen */
+    background-image: url('side-image.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     height: auto;
@@ -101,9 +100,9 @@ main ul {
 }
 
 main ul li {
-    width: 150px;
-    height: 150px;
-    border: 1px solid #ddd;
+    width: 9.375rem; /* 150px */
+    height: 9.375rem; /* 150px */
+    border: 0.0625rem solid #ddd;
     background-color: #fff;
     display: flex;
     justify-content: center;
@@ -111,7 +110,7 @@ main ul li {
     font-size: 1rem;
     color: #555;
     text-align: center;
-    flex-direction: column; /* Asegura que el texto esté debajo de la imagen */
+    flex-direction: column;
 }
 
 main ul li:hover {
@@ -126,149 +125,133 @@ main ul li span {
     margin-top: 0.5rem;
 }
 
-/* Contenedor de los productos */
-/* Contenedor de los productos */
 /* Contenedor de productos */
 .product-list {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr)); /* Espacio mínimo menor */
-    gap: 1.2rem; /* Incrementar ligeramente el espacio entre productos */
-    padding: 1.5rem;
-}
-
-
-/* Estilos de cada producto */
-/* Contenedor de los productos */
-.product-list {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(12rem, 1fr)); /* Reducir tamaño mínimo a 12rem */
-    gap: 2rem; /* Reducir espacio entre productos */
+    grid-template-columns: repeat(auto-fill, minmax(12rem, 1fr));
+    gap: 2rem;
     padding: 1rem;
 }
 
+/* Estilos de cada producto */
 .product-item {
-    padding: 0.6rem; /* Reducir el relleno interno */
-    border-radius: 0.3rem;
-    box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.1); /* Sombras más ligeras */
+    background-color: #fff;
+    box-shadow: 0 0.3rem 0.6rem rgba(0, 0, 0, 0.1);
+    border-radius: 0.4rem;
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-/* Tamaño general de los botones */
-nav ul li button {
-    padding: 0.3rem 0.6rem; /* Botones más pequeños */
-    font-size: 0.8rem; /* Reducir el texto */
-}
 .product-item:hover {
-    transform: scale(1.03); /* Efecto hover más sutil */
+    transform: scale(1.03);
     box-shadow: 0 0.8rem 1.6rem rgba(0, 0, 0, 0.2);
 }
 
 /* Imagen del producto */
 .product-item img {
-    width: 80%; /* Reducir tamaño al 80% del ancho del contenedor */
+    width: 80%;
     margin: 0 auto;
     aspect-ratio: 1 / 1;
-    object-fit: contain; /* Mantener proporciones */
+    object-fit: contain;
     background-color: transparent;
 }
 
 /* Título del producto */
 .product-title {
-    font-size: 0.9rem; /* Reducir tamaño del texto */
+    font-size: 0.9rem;
     color: #333;
     padding: 0.6rem;
 }
 
 /* Precio y detalles */
 .product-details {
-    font-size: 0.8rem; /* Reducir tamaño del texto */
+    font-size: 0.8rem;
     color: #555;
     margin-bottom: 0.8rem;
 }
 
-/* Encabezado principal (Artículos Recomendados para Ti) */
+/* Encabezado principal */
 .main-title {
     display: inline-block;
     background-color: #f4f4f4;
     color: #333;
-    font-size: 1.2rem; /* Reducir tamaño del texto */
+    font-size: 1.2rem;
     font-weight: bold;
-    padding: 0.6rem 1.2rem; /* Ajustar espaciado interno */
+    padding: 0.6rem 1.2rem;
     border-radius: 0.4rem;
-    box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.1); /* Sombra más sutil */
+    box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.1);
     text-align: center;
     margin: 1.5rem auto;
 }
 
-/* Ajuste general del body */
-body {
-    background-color: black;
-    font-family: Arial, sans-serif;
-    margin: 0;
+/* Footer */
+.site-footer {
+    background-color: #1a1a1a;
+    color: #f5f5f5;
+    padding: 2rem 1rem;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+.site-footer section {
+    margin-bottom: 1.5rem;
+}
+
+.site-footer h2 {
+    font-size: 1.2rem;
+    margin-bottom: 0.8rem;
+    color: #ff6f61;
+}
+
+.site-footer p {
+    margin: 0.5rem 0;
+    line-height: 1.5;
+}
+
+.site-footer nav ul {
+    list-style: none;
     padding: 0;
-    box-sizing: border-box;
+    margin: 0;
 }
 
-/* Barra de búsqueda */
-a input[type="text"] {
-    width: 40%; /* Reducir ancho de la barra */
-    padding: 0.4rem; /* Reducir espaciado interno */
-    font-size: 0.9rem; /* Reducir tamaño del texto */
+.site-footer nav ul li {
+    margin: 0.5rem 0;
 }
 
-/* Tamaño general de los botones */
-nav ul li button {
-    padding: 0.3rem 0.6rem; /* Botones más pequeños */
-    font-size: 0.8rem; /* Reducir el texto */
-}
-.product-item:hover {
-    transform: scale(1.03); /* Efecto hover más sutil */
-    box-shadow: 0 0.8rem 1.6rem rgba(0, 0, 0, 0.2);
+.site-footer .social-media ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    padding: 0;
 }
 
-/* Ajustar lista de artículos */
-main ul li {
-    width: 120px; /* Contenedor más pequeño */
-    height: 120px;
-    font-size: 0.8rem; /* Reducir tamaño de texto */
-    border-radius: 0.4rem; /* Bordes más suaves */
+.site-footer .social-media ul li {
+    margin: 0;
 }
 
-/* Hover más discreto */
-main ul li:hover {
-    border-color: #007BFF;
-    color: #007BFF;
+.site-footer .social-media ul li a {
+    font-size: 1rem;
+    color: #f5f5f5;
+    text-decoration: none;
+    transition: color 0.3s ease;
 }
 
-/* Estilo general para el nav y los botones */
-nav ul {
-    list-style: none; /* Elimina los puntos de la lista */
-    padding: 0; /* Elimina el relleno */
-    display: flex; /* Usa flexbox para alinear los elementos */
-    gap: 15px; /* Espacio entre los botones */
+.site-footer .social-media ul li a:hover {
+    color: #ff6f61;
 }
 
-nav li {
-    display: inline; /* Asegura que cada li se comporte como un bloque de línea */
+.site-footer .copyright {
+    border-top: 0.0625rem solid #333;
+    padding-top: 1rem;
+    margin-top: 1rem;
+    font-size: 0.8rem;
+    color: #ccc;
 }
 
-.styled-button {
-    background-color: red; /* Fondo rojo */
-    color: white; /* Texto blanco */
-    border: 2px solid black; /* Borde negro */
-    padding: 10px 20px; /* Espaciado interno */
-    font-size: 16px; /* Tamaño del texto */
-    font-family: Arial, sans-serif; /* Tipo de fuente */
-    cursor: pointer; /* Cambia el cursor al pasar por encima */
-    text-transform: uppercase; /* Texto en mayúsculas */
-    transition: all 0.3s ease; /* Transición suave */
-    border-radius: 5px; /* Bordes redondeados */
-}
 
-/* Efecto al pasar el ratón */
-.styled-button:hover {
-    background-color: white; /* Fondo blanco al pasar el ratón */
-    color: red; /* Texto rojo al pasar el ratón */
-    border: 2px solid red; /* Borde rojo al pasar el ratón */
-}
+
+
 
 
