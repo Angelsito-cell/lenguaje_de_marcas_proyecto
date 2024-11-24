@@ -1,30 +1,39 @@
-/* Estilos generales */
-body {
-    background-color: black;
-    background-size: cover; /* Hace que la imagen cubra toda la pantalla */
-    background-position: center bottom; /* Centra la imagen en la pantalla */
-    background-attachment: fixed; /* Hace que la imagen no se mueva cuando se haga scroll */
-    font-family: Arial, sans-serif;
-    height: 100vh;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+    /* Estilos generales */
+    body {
+        background-color: black;
+        background-size: cover; /* Hace que la imagen cubra toda la pantalla */
+        background-position: center bottom; /* Centra la imagen en la pantalla */
+        background-attachment: fixed; /* Hace que la imagen no se mueva cuando se haga scroll */
+        font-family: Arial, sans-serif;
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
 
-/* Header */
-header img {
-    width: 100%;
-    height: auto;
-    background-size: auto;
-    background-position: center;
-    overflow: scroll;
+    /* Header */
+
+
+    header img {
+        width: 100%;
+        height: auto;
+        background-size: auto;
+        background-position: center;
+        overflow: scroll;
+    }
+    /* Contenedor de la barra de búsqueda */
+.barra-contenedor {
+    display: flex;              /* Usamos flexbox para organizar los elementos */
+    justify-content: center;    /* Centra la barra de búsqueda */
+    align-items: center;        /* Alinea los elementos verticalmente */
+    position: relative;         /* Permite posicionar los botones en relación a la barra */
+    width: 100%;                /* Asegura que ocupe todo el ancho disponible */
+    margin: 1rem auto;          /* Añade márgenes automáticos para centrar */
 }
 
 /* Barra de búsqueda */
-a input[type="text"] {
-    display: block;
-    margin: 1rem auto; /* Centra horizontalmente */
-    width: 50%;
+.barra {
+    width: 50%;                 /* Mantiene el tamaño de la barra */
     padding: 0.625rem 1.25rem;
     font-size: 1rem;
     border: 0.125rem solid #ccc;
@@ -32,19 +41,19 @@ a input[type="text"] {
     background-color: red;
     color: white;
     border: 0.125rem solid black;
+    display: inline-block;      /* Asegura que la barra ocupe espacio y no se deforme */
 }
 
-/* Botones debajo de la barra de búsqueda */
-nav ul {
-    display: flex;
-    justify-content: center;
-    gap: 0.5rem;
-    padding: 0;
-    list-style: none;
-    margin: 0 0 1rem 0;
+.barra-boton img {
+    width: 20px;                 /* Tamaño de la imagen */
+    height: 20px;                /* Mantiene la imagen cuadrada */
 }
 
-nav ul li button {
+/* Botones a la derecha */
+.barra-boton {
+    position: absolute;         /* Los posicionamos de manera absoluta dentro del contenedor */
+    top: 50%;                    /* Los centramos verticalmente */
+    transform: translateY(-50%); /* Asegura que estén centrados verticalmente */
     padding: 0.5rem 1rem;
     font-size: 1rem;
     background-color: red;
@@ -55,193 +64,231 @@ nav ul li button {
     transition: background-color 0.2s ease, color 0.2s ease;
 }
 
-nav ul li button:hover {
+.barra-boton:hover {
     background-color: white;
     color: red;
 }
 
-/* Contenedor principal con columnas */
-section {
-    display: flex;
+/* Botón "Iniciar Sesión" */
+.barra-contenedor > .barra-boton:nth-of-type(1) {
+    right: 8rem;  /* Coloca el botón "Iniciar Sesión" */
 }
 
-aside {
-    width: 10%;
-    background-image: url('side-image.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: auto;
+/* Botón "Cesta" */
+.barra-contenedor > .barra-boton:nth-of-type(2) {
+    right: 1rem;  /* Coloca el botón "Cesta" */
 }
 
-/* Contenido principal */
-main {
-    width: 80%;
-    padding: 2rem;
-    background-color: transparent;
-}
+    
 
-/* Títulos de secciones */
-main h2 {
-    text-align: center;
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-    color: red;
-}
+    /* Botones debajo de la barra de búsqueda */
+    nav ul {
+        display: flex;
+        justify-content: center;
+        gap: 0.5rem;
+        padding: 0;
+        list-style: none;
+        margin: 0 0 1rem 0;
+    }
 
-/* Listas de artículos y ofertas */
-main ul {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 1rem;
-    list-style: none;
-    padding: 0;
-}
+    nav ul li button {
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+        background-color: red;
+        color: #fff;
+        border: none;
+        border-radius: 0.313rem;
+        cursor: pointer;
+        transition: background-color 0.2s ease, color 0.2s ease;
+    }
 
-main ul li {
-    width: 150px;
-    height: 150px;
-    border: 1px solid #ddd;
-    background-color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1rem;
-    color: #555;
-    text-align: center;
-    flex-direction: column; /* Asegura que el texto esté debajo de la imagen */
-}
+    nav ul li button:hover {
+        background-color: white;
+        color: red;
+    }
 
-main ul li:hover {
-    border-color: #007BFF;
-    color: #007BFF;
-    cursor: pointer;
-}
+    /* Contenedor principal con columnas */
+    section {
+        display: flex;
+    }
 
-/* Ajusta la alineación de texto en los elementos */
-main ul li span {
-    display: block;
-    margin-top: 0.5rem;
-}
+    aside {
+        width: 10%;
+        background-image: url('side-image.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: auto;
+    }
 
-/* Contenedor de productos */
-.product-list {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(12rem, 1fr)); /* Diseño adaptable */
-    gap: 2rem;
-    padding: 1rem;
-}
+    /* Contenido principal */
+    main {
+        width: 80%;
+        padding: 2rem;
+        background-color: transparent;
+    }
 
-/* Estilos de cada producto */
-.product-item {
-    background-color: #fff;
-    box-shadow: 0 0.3rem 0.6rem rgba(0, 0, 0, 0.1); /* Sombra ligera */
-    border-radius: 0.4rem;
-    overflow: hidden;
-    text-align: center;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
+    /* Títulos de secciones */
+    main h2 {
+        text-align: center;
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+        color: red;
+    }
 
-.product-item:hover {
-    transform: scale(1.03); /* Efecto hover */
-    box-shadow: 0 0.8rem 1.6rem rgba(0, 0, 0, 0.2);
-}
+    /* Listas de artículos y ofertas */
+    main ul {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 1rem;
+        list-style: none;
+        padding: 0;
+    }
 
-/* Imagen del producto */
-.product-item img {
-    width: 80%;
-    margin: 0 auto;
-    aspect-ratio: 1 / 1;
-    object-fit: contain;
-    background-color: transparent;
-}
+    main ul li {
+        width: 150px;
+        height: 150px;
+        border: 1px solid #ddd;
+        background-color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1rem;
+        color: #555;
+        text-align: center;
+        flex-direction: column; /* Asegura que el texto esté debajo de la imagen */
+    }
 
-/* Título del producto */
-.product-title {
-    font-size: 0.9rem;
-    color: #333;
-    padding: 0.6rem;
-}
+    main ul li:hover {
+        border-color: #007BFF;
+        color: #007BFF;
+        cursor: pointer;
+    }
 
-/* Precio y detalles */
-.product-details {
-    font-size: 0.8rem;
-    color: #555;
-    margin-bottom: 0.8rem;
-}
+    /* Ajusta la alineación de texto en los elementos */
+    main ul li span {
+        display: block;
+        margin-top: 0.5rem;
+    }
 
-/* Footer */
-.site-footer {
-    background-color: #1a1a1a; /* Fondo oscuro */
-    color: #f5f5f5; /* Texto claro */
-    padding: 2rem 1rem;
-    text-align: center;
-    font-size: 0.9rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 2rem;
-}
+    /* Contenedor de productos */
+    .productos {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(12rem, 1fr)); /* Diseño adaptable */
+        gap: 2rem;
+        padding: 1rem;
+    }
 
-.site-footer section {
-    margin-bottom: 1.5rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-}
+    /* Estilos de cada producto */
+    .producto {
+        background-color: #fff;
+        box-shadow: 0 0.3rem 0.6rem rgba(0, 0, 0, 0.1); /* Sombra ligera */
+        border-radius: 0.4rem;
+        overflow: hidden;
+        text-align: center;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
 
-.site-footer h2 {
-    font-size: 1.2rem;
-    margin-bottom: 0.8rem;
-    color: #ff6f61;
-}
+    .producto:hover {
+        transform: scale(1.03); /* Efecto hover */
+        box-shadow: 0 0.8rem 1.6rem rgba(0, 0, 0, 0.2);
+    }
 
-.site-footer p {
-    margin: 0.5rem 0;
-    line-height: 1.5;
-}
+    /* Imagen del producto */
+    .producto img {
+        width: 80%;
+        margin: 0 auto;
+        aspect-ratio: 1 / 1;
+        object-fit: contain;
+        background-color: transparent;
+    }
 
-.site-footer nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
+    /* Título del producto */
+    .product-title {
+        font-size: 0.9rem;
+        color: #333;
+        padding: 0.6rem;
+    }
 
-.site-footer nav ul li {
-    margin: 0.5rem 0;
-}
+    /* Precio y detalles */
+    .product-details {
+        font-size: 0.8rem;
+        color: #555;
+        margin-bottom: 0.8rem;
+    }
 
-.site-footer .social-media ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    gap: 1.5rem;
-    padding: 0;
-}
+    /* Footer */
+    .footer {
+        background-color: #1a1a1a; /* Fondo oscuro */
+        color: #f5f5f5; /* Texto claro */
+        padding: 2rem 1rem;
+        text-align: center;
+        font-size: 0.9rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
 
-.site-footer .social-media ul li {
-    margin: 0;
-}
+    .footer section {
+        margin-bottom: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
 
-.site-footer .social-media ul li a {
-    font-size: 1rem;
-    color: #f5f5f5;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
+    .footer h2 {
+        font-size: 1.2rem;
+        margin-bottom: 0.8rem;
+        color: #ff6f61;
+    }
 
-.site-footer .social-media ul li a:hover {
-    color: #ff6f61;
-}
+    .footer p {
+        margin: 0.5rem 0;
+        line-height: 1.5;
+    }
 
-.site-footer .copyright {
-    border-top: 1px solid #333;
-    padding-top: 1rem;
-    margin-top: 1rem;
-    font-size: 0.8rem;
-    color: #ccc;
-}
+    .footer nav ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .footer nav ul li {
+        margin: 0.5rem 0;
+    }
+
+    .footer .redes ul {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        gap: 1.5rem;
+        padding: 0;
+    }
+
+    .footer .redes ul li {
+        margin: 0;
+    }
+
+    .footer .redes ul li a {
+        font-size: 1rem;
+        color: #f5f5f5;
+        text-decoration: none;
+        transition: color 0.3s ease;
+    }
+
+    .footer .redes ul li a:hover {
+        color: #ff6f61;
+    }
+
+    .footer .copyright {
+        border-top: 1px solid #333;
+        padding-top: 1rem;
+        margin-top: 1rem;   
+        font-size: 0.8rem;
+        color: #ccc;
+    }
 
 
 
