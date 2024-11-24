@@ -1,9 +1,9 @@
     /* Estilos generales */
     body {
         background-color: black;
-        background-size: cover; /* Hace que la imagen cubra toda la pantalla */
-        background-position: center bottom; /* Centra la imagen en la pantalla */
-        background-attachment: fixed; /* Hace que la imagen no se mueva cuando se haga scroll */
+        background-size: cover; 
+        background-position: center bottom;
+        background-attachment: fixed; 
         font-family: Arial, sans-serif;
         height: 100vh;
         margin: 0;
@@ -23,17 +23,17 @@
     }
     /* Contenedor de la barra de búsqueda */
 .barra-contenedor {
-    display: flex;              /* Usamos flexbox para organizar los elementos */
-    justify-content: center;    /* Centra la barra de búsqueda */
-    align-items: center;        /* Alinea los elementos verticalmente */
-    position: relative;         /* Permite posicionar los botones en relación a la barra */
-    width: 100%;                /* Asegura que ocupe todo el ancho disponible */
-    margin: 1rem auto;          /* Añade márgenes automáticos para centrar */
+    display: flex;              
+    justify-content: center;   
+    align-items: center;       
+    position: relative;         
+    width: 100%;          
+    margin: 1rem auto;    
 }
 
 /* Barra de búsqueda */
 .barra {
-    width: 50%;                 /* Mantiene el tamaño de la barra */
+    width: 50%;               
     padding: 0.625rem 1.25rem;
     font-size: 1rem;
     border: 0.125rem solid #ccc;
@@ -41,19 +41,19 @@
     background-color: red;
     color: white;
     border: 0.125rem solid black;
-    display: inline-block;      /* Asegura que la barra ocupe espacio y no se deforme */
+    display: inline-block;     
 }
 
 .barra-boton img {
-    width: 20px;                 /* Tamaño de la imagen */
-    height: 20px;                /* Mantiene la imagen cuadrada */
+    width: 20px;                 
+    height: 20px;                
 }
 
 /* Botones a la derecha */
 .barra-boton {
-    position: absolute;         /* Los posicionamos de manera absoluta dentro del contenedor */
-    top: 50%;                    /* Los centramos verticalmente */
-    transform: translateY(-50%); /* Asegura que estén centrados verticalmente */
+    position: absolute;        
+    top: 50%;                   
+    transform: translateY(-50%); 
     padding: 0.5rem 1rem;
     font-size: 1rem;
     background-color: red;
@@ -71,12 +71,12 @@
 
 /* Botón "Iniciar Sesión" */
 .barra-contenedor > .barra-boton:nth-of-type(1) {
-    right: 8rem;  /* Coloca el botón "Iniciar Sesión" */
+    right: 8rem;  
 }
 
 /* Botón "Cesta" */
 .barra-contenedor > .barra-boton:nth-of-type(2) {
-    right: 1rem;  /* Coloca el botón "Cesta" */
+    right: 1rem;  
 }
 
     
@@ -156,7 +156,7 @@
         font-size: 1rem;
         color: #555;
         text-align: center;
-        flex-direction: column; /* Asegura que el texto esté debajo de la imagen */
+        flex-direction: column; 
     }
 
     main ul li:hover {
@@ -174,7 +174,7 @@
     /* Contenedor de productos */
     .productos {
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(12rem, 1fr)); /* Diseño adaptable */
+        grid-template-columns: repeat(auto-fill, minmax(12rem, 1fr)); 
         gap: 2rem;
         padding: 1rem;
     }
@@ -182,7 +182,7 @@
     /* Estilos de cada producto */
     .producto {
         background-color: #fff;
-        box-shadow: 0 0.3rem 0.6rem rgba(0, 0, 0, 0.1); /* Sombra ligera */
+        box-shadow: 0 0.3rem 0.6rem rgba(0, 0, 0, 0.1); 
         border-radius: 0.4rem;
         overflow: hidden;
         text-align: center;
@@ -219,8 +219,8 @@
 
     /* Footer */
     .footer {
-        background-color: #1a1a1a; /* Fondo oscuro */
-        color: #f5f5f5; /* Texto claro */
+        background-color: #1a1a1a; 
+        color: #f5f5f5; 
         padding: 2rem 1rem;
         text-align: center;
         font-size: 0.9rem;
@@ -289,6 +289,7 @@
         font-size: 0.8rem;
         color: #ccc;
     }
+
 
 
 
