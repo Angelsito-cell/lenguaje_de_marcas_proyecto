@@ -427,6 +427,41 @@
         height: auto;
     }
     
+    .volver-inicio {
+        position: absolute;
+        top: 1rem;
+        left: 1rem;
+        background-color: red;
+        color: white;
+        border: none;
+        border-radius: 0.5rem;
+        padding: 0.5rem 1rem;
+        cursor: pointer;
+        font-size: 0.9rem;
+        transition: background-color 0.3s ease, color 0.3s ease;
+    }
+    
+    .volver-inicio:hover {
+        background-color: white;
+        color: red;
+    }
+
+    .crear {
+        display: flex;
+        text-align: center;
+        align-items: center;
+        margin-top: 1rem;
+    }
+    
+    .crear-cuenta {
+        font-size: 0.9rem;
+        color: red;
+        text-decoration: none;
+    }
+    
+    .crear-cuenta:hover {
+        text-decoration: underline;
+    }
 
 
 
