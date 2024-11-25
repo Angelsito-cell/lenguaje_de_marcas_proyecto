@@ -40,6 +40,56 @@
         font-size: 1rem;
     }
 
+    .boton {
+        width: 100%;
+        padding: 1rem;
+        background-color: red;
+        color: white;
+        border: none;
+        border-radius: 0.5rem;
+        cursor: pointer;
+        font-size: 1rem;
+        margin-top: 1rem;
+    }
+
+    .boton:hover{
+        background-color: white;
+        color: red;
+    }
+
+    .redes{
+        margin-top: 1.5rem;
+    }
+
+    .boton{
+        width: 100%;
+        padding: 1rem;
+        margin: 0.5rem; 
+        border-radius: 0.5rem;
+        color: white;
+        border: none;
+        font-size: 1rem; 
+        cursor: pointer; 
+        transition: background-color 0.3s ease;
+    }
+
+    .boton.google {
+        background-color: #1da1f2;
+    }
+    
+    .boton.facebook {
+        background-color: #1da1f2;
+    }
+    
+    .boton.twitter {
+        background-color: #1da1f2;
+    }
+
+    .boton:hover {
+
+        opacity: 0.8    ;
+    }
+
     /* Header */
     header img {
         width: 100%;
