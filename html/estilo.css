@@ -11,7 +11,7 @@
         box-sizing: border-box;
     }
     .fondo {
-
+        background-image: url('imágenes/banner.jpg');
         background-size: cover;
         background-position: center;
         height: 100%;
@@ -366,6 +366,7 @@
         font-size: 0.8rem;
         color: #ccc;
     }
+
 
 
 
