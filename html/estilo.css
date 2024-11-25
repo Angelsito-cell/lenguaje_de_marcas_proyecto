@@ -79,8 +79,15 @@
         border: 0.125rem solid black;
         display: inline-block;
     }
-    
 
+    .otros {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        margin-top: 2rem;
+    }
+    
     .boton {
         width: 100%;
         padding: 1rem;
@@ -93,14 +100,26 @@
         margin-top: 1rem;
         transition: background-color 0.3s ease;
     }
+    .otros .boton {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 0.5rem;
+        width: 80%;
+        max-width: 250px;
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
+        background-color: #444;
+        color: white;
+        border: none;
+        border-radius: 0.5rem;
+        cursor: pointer;
+        transition: background-color 0.3s ease, color 0.3s ease;
+    }
 
     .boton:hover{
         background-color: white;
         color: red;
-    }
-
-    .otros{
-        margin-top: 1.5rem;
     }
 
 
@@ -118,7 +137,12 @@
 
     .boton:hover {
 
-        opacity: 0.8    ;
+        opacity: 0.9;
+    }
+
+    .otros .boton img {
+        width: 20px;
+        height: 20px;
     }
 
     /* Header */
