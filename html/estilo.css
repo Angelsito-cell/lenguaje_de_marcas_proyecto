@@ -1,4 +1,5 @@
-body {
+ /* Estilos generales */
+ body {
     background-color: black;
     background-size: cover; 
     background-position: center bottom;
@@ -16,13 +17,15 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-}
+    }
+
 .contenedor-login {
+
     display: flex;
     flex-direction: column;
     position: fixed;
-    top: 31.25rem; 
-    left: 31.25rem; 
+    top: 50%;
+    left: 50%;
     transform: translate(-50%, -50%);
     margin: 0;
     align-items: center;
@@ -30,54 +33,68 @@ body {
     background-color: transparent;
     padding: 2rem;
     border-radius: 1rem;
-    width: 6.25rem; 
+    width: 100%;
     max-width: 25rem;
     text-align: center;
     align-content: center;
     gap: 1rem;
 }
+
 .user {
+
     display: flex;              
     justify-content: center;   
     align-items: center;       
     position: relative;         
-    width: 6.25rem;          
+    width: 100%;          
     margin: 1rem auto;
 }
+
 .conf_cont {
+
     display: flex;              
     justify-content: center;   
     align-items: center;       
     position: relative;         
-    width: 6.25rem;          
+    width: 100%;          
     margin: 1rem auto;
 }
+
+
+
 .cont {
+
     display: flex;              
     justify-content: center;   
     align-items: center;       
     position: relative;         
-    width: 6.25rem;          
+    width: 100%;          
     margin: 1rem auto;
 }
+
 .correo {
+
     display: flex;              
     justify-content: center;   
     align-items: center;       
     position: relative;         
-    width: 6.25rem;          
+    width: 100%;          
     margin: 1rem auto;
 }
+
 .conf_correo {
+
     display: flex;              
     justify-content: center;   
     align-items: center;       
     position: relative;         
-    width: 6.25rem;          
+    width: 100%;          
     margin: 1rem auto;
 }
+
 .usuario {
-    width: 6.25rem;               
+
+    width: 100%;               
     padding: 0.625rem 1.25rem;
     font-size: 1rem;
     border: 0.125rem solid #ccc;
@@ -87,8 +104,10 @@ body {
     border: 0.125rem solid black;
     display: inline-block; 
 }
+
 .contraseña {
-    width: 6.25rem;               
+
+    width: 100%;               
     padding: 0.625rem 1.25rem;
     font-size: 1rem;
     border: 0.125rem solid #ccc;
@@ -98,8 +117,10 @@ body {
     border: 0.125rem solid black;
     display: inline-block;
 }
+
 .confirmar_contraseña {
-    width: 6.25rem;               
+
+    width: 100%;               
     padding: 0.625rem 1.25rem;
     font-size: 1rem;
     border: 0.125rem solid #ccc;
@@ -109,8 +130,10 @@ body {
     border: 0.125rem solid black;
     display: inline-block;
 }
+
 .confirmar_correo {
-    width: 6.25rem;               
+
+    width: 100%;               
     padding: 0.625rem 1.25rem;
     font-size: 1rem;
     border: 0.125rem solid #ccc;
@@ -120,8 +143,10 @@ body {
     border: 0.125rem solid black;
     display: inline-block;
 }
+
 .correo_electronico {
-    width: 6.25rem;               
+
+    width: 100%;               
     padding: 0.625rem 1.25rem;
     font-size: 1rem;
     border: 0.125rem solid #ccc;
@@ -131,6 +156,8 @@ body {
     border: 0.125rem solid black;
     display: inline-block;
 }
+
+
 .otros {
     display: flex;
     flex-direction: column;
@@ -138,15 +165,15 @@ body {
     gap: 1rem;
     margin-top: 2rem;
 }
+
 .boton {
-    width: 6.25rem; 
+    width: 100%;
     padding: 1rem;
     background-color: red;
     color: white;
     border: none;
     border-radius: 0.5rem;
     cursor: pointer;
-    font-size:
     font-size: 1rem;
     margin-top: 1rem;
     transition: background-color 0.3s ease;
@@ -156,8 +183,8 @@ body {
     align-items: center;
     justify-content: flex-start;
     gap: 0.5rem;
-    width: 5rem; /* 80% */
-    max-width: 15.625rem; /* 250px */
+    width: 80%;
+    max-width: 250px;
     padding: 0.5rem 1rem;
     font-size: 0.9rem;
     background-color: #444;
@@ -167,89 +194,124 @@ body {
     cursor: pointer;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
-.boton:hover {
+
+.boton:hover{
     background-color: white;
     color: red;
 }
+
+
 .boton.google {
     background-color: #db4437;
 }
+
 .boton.facebook {
     background-color: #3b5998;
 }
+
 .boton.twitter {
     background-color: #1da1f2;
 }
+
 .boton:hover {
+
     opacity: 0.9;
 }
+
 .otros .boton img {
-    width: 1.25rem; /* 20px */
-    height: 1.25rem; /* 20px */
+    width: 20px;
+    height: 20px;
 }
+
+/* Header */
 header img {
-    width: 6.25rem; /* 100% */
+    width: 100%;
     height: auto;
     background-size: auto;
     background-position: center;
     overflow: scroll;
 }
+/* Contenedor de la barra de búsqueda */
+
 .barra-contenedor {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 0.5rem;
+    gap: 1rem;
     padding: 0.5rem 1rem;
     background-color: transparent;
-    width: 6.25rem; /* 100% */
+    width: 100%;
 }
+
 .logo {
-    display: flex;
-    align-items: center;
+display: flex;
+align-items: center;
 }
-.logo img {
-    max-width: 40%;
-    height: auto;
+
+.logo img{
+
+max-width: 40%;
+height: auto;
+
 }
+
+
+/* Barra de búsqueda */
+
 .barra {
-    flex-grow: 1;
-    padding: 0.5rem;
-    font-size: 1rem;
-    color: white;
-    background-color: red;
-    border: none;
-    border-radius: 0.3rem;
-    width: 2.5rem; /* 40% */
-    max-width: 3.75rem; /* 60% */
-    margin: 0 auto; 
+
+flex-grow: 1;
+padding: 0.5rem;
+font-size: 1rem;
+color: white;
+background-color: red;
+border: none;
+border-radius: 0.3rem;
+width: 40%;
+max-width: 60%;
+margin: 0 auto; 
+
 }
+
 .barra-boton img {
-    width: 1.25rem;                 
-    height: 1.25rem;                
+width: 1.25rem;                 
+height: 1.25rem;                
 }
+
+/* Botones a la derecha */
+
 .barra-boton {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    padding: 0.5rem 0.8rem;
-    background-color: red;
-    color: white;
-    text-decoration: none;
-    border-radius: 0.3rem;
-    border: none;
-    cursor: pointer;
-    transition: background-color 0.2s ease, color 0.2s ease;
+display: flex;
+align-items: center;
+gap: 0.5rem;
+padding: 0.5rem 0.8rem;
+background-color: red;
+color: white;
+text-decoration: none;
+border-radius: 0.3rem;
+border: none;
+cursor: pointer;
+transition: background-color 0.2s ease, color 0.2s ease;
 }
+
 .barra-boton:hover {
-    background-color: white;
-    color: red;
+background-color: white;
+color: red;
 }
+
+/* Botón "Iniciar Sesión" */
 .barra-contenedor > .barra-boton:nth-of-type(1) {
-    right: 6.25rem; /* 10rem */
+right: 10rem;  
 }
+
+/* Botón "Cesta" */
 .barra-contenedor > .barra-boton:nth-of-type(2) {
-    right: 0.625rem; /* 1rem */
+right: 1rem;  
 }
+
+
+
+/* Botones debajo de la barra de búsqueda */
 nav ul {
     display: flex;
     justify-content: center;
@@ -258,6 +320,7 @@ nav ul {
     list-style: none;
     margin: 0 0 1rem 0;
 }
+
 nav ul li button {
     padding: 0.5rem 1rem;
     font-size: 1rem;
@@ -268,42 +331,53 @@ nav ul li button {
     cursor: pointer;
     transition: background-color 0.2s ease, color 0.2s ease;
 }
+
 nav ul li button:hover {
     background-color: white;
     color: red;
 }
+
+/* Contenedor principal con columnas */
 section {
     display: flex;
 }
+
 aside {
-    width: 1.25rem; /* 10% */
+    width: 10%;
     background-image: url('side-image.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     height: auto;
 }
+
+/* Contenido principal */
 main {
-    width: 5rem; /* 80% */
+    width: 80%;
     padding: 2rem;
     background-color: transparent;
 }
+
+/* Títulos de secciones */
 main h2 {
     text-align: center;
     font-size: 1.5rem;
     margin-bottom: 1rem;
     color: red;
 }
+
+/* Listas de artículos y ofertas */
 main ul {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     gap: 1rem;
     list-style: none;
-    padding:    0;
+    padding: 0;
 }
+
 main ul li {
-    width: 9.375rem; /* 150px */
-    height: 9.375rem; /* 150px */
+    width: 150px;
+    height: 150px;
     border: 1px solid #ddd;
     background-color: #fff;
     display: flex;
@@ -314,21 +388,28 @@ main ul li {
     text-align: center;
     flex-direction: column; 
 }
+
 main ul li:hover {
     border-color: #007BFF;
     color: #007BFF;
     cursor: pointer;
 }
+
+/* Ajusta la alineación de texto en los elementos */
 main ul li span {
     display: block;
     margin-top: 0.5rem;
 }
+
+/* Contenedor de productos */
 .productos {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(12rem, 1fr)); 
     gap: 2rem;
     padding: 1rem;
 }
+
+/* Estilos de cada producto */
 .producto {
     background-color: #fff;
     box-shadow: 0 0.3rem 0.6rem rgba(0, 0, 0, 0.1); 
@@ -337,10 +418,13 @@ main ul li span {
     text-align: center;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
+
 .producto:hover {
     transform: scale(1.03);
     box-shadow: 0 0.8rem 1.6rem rgba(0, 0, 0, 0.2);
 }
+
+/* Imagen del producto */
 .producto img {
     width: 80%;
     margin: 0 auto;
@@ -348,16 +432,22 @@ main ul li span {
     object-fit: contain;
     background-color: transparent;
 }
+
+/* Título del producto */
 .product-title {
     font-size: 0.9rem;
     color: #333;
     padding: 0.6rem;
 }
+
+/* Precio y detalles */
 .product-details {
     font-size: 0.8rem;
     color: #555;
     margin-bottom: 0.8rem;
 }
+
+/* Footer */
 .footer {
     background-color: #1a1a1a; 
     color: #f5f5f5; 
@@ -369,6 +459,7 @@ main ul li span {
     align-items: center;
     gap: 1rem;
 }
+
 .footer section {
     margin-bottom: 1.5rem;
     display: flex;
@@ -376,23 +467,28 @@ main ul li span {
     align-items: center;
     text-align: center;
 }
+
 .footer h2 {
     font-size: 1.2rem;
     margin-bottom: 0.8rem;
     color: #ff6f61;
 }
+
 .footer p {
     margin: 0.5rem 0;
     line-height: 1.5;
 }
+
 .footer nav ul {
     list-style: none;
     padding: 0;
     margin: 0;
 }
+
 .footer nav ul li {
     margin: 0.5rem 0;
 }
+
 .footer .redes ul {
     list-style: none;
     display: flex;
@@ -400,18 +496,22 @@ main ul li span {
     gap: 1.5rem;
     padding: 0;
 }
+
 .footer .redes ul li {
     margin: 0;
 }
+
 .footer .redes ul li a {
     font-size: 1rem;
     color: #f5f5f5;
     text-decoration: none;
     transition: color 0.3s ease;
 }
+
 .footer .redes ul li a:hover {
     color: #ff6f61;
 }
+
 .footer .copyright {
     border-top: 1px solid #333;
     padding-top: 1rem;
@@ -419,35 +519,32 @@ main ul li span {
     font-size: 0.8rem;
     color: #ccc;
 }
+
 .redes img {
-    width: 3.125rem; /* 50px */
+    width: 50px;
     height: auto;
 }
+
 .crear {
     display: flex;
     text-align: center;
     align-items: center;
     margin-top: 1rem;
 }
+
 .iniciar {
     display: flex;
     text-align: center;
     align-items: center;
     margin-top: 1rem;
 }
+
 .crear-cuenta {
     font-size: 0.9rem;
     color: red;
     text-decoration: none;
 }
+
 .crear-cuenta:hover {
     text-decoration: underline;
 }
-
-
-
-
-
-
-
-
