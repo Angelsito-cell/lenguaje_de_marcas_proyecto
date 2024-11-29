@@ -265,6 +265,7 @@ height: auto;
     flex-grow: 1;
     margin: 0 0.5 rem;
 }
+
 /* Barra de búsqueda */
 
 .busqueda img{
@@ -274,13 +275,20 @@ height: auto;
 
 .barra {
 
+
 width: 100%;
 padding: 0.5rem;
 font-size: 1rem;
 color: white;
 background-color: red;
-border: none;
+border: 0.063rem solid #ccc;
 border-radius: 0.3rem;
+background-image: url(imágenes/busqueda.png);
+background-repeat: no-repeat;
+background-position: left 0.5rem center;
+background-size: 1.5rem;
+padding-left: 2.5rem;
+
 
 }
 
