@@ -341,20 +341,28 @@ right: 1rem;
 /* Botones debajo de la barra de búsqueda */
 
 .barra_nav{
+
+    background-color: transparent;
+    color: white;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    gap: 0.5rem;
-    padding: 0.5rem 1rem;
-    background-color: transparent;
-    width: 100%;
+    padding: 0.625rem 1.25rem;
+    gap: 1rem;
     border: 0.063rem solid #ccc;
     border-color: red;
     border-radius: 0.5rem;
-
-
 }
-
+.navbar a, .dropdown-button {
+    text-decoration: none;
+    color: white;
+    margin-right: 1.25rem;
+    padding: 0.5rem 0.625rem;
+    border-radius: 0.25rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    
+}
 nav ul {
     display: flex;
     justify-content: center;
