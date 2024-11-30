@@ -359,9 +359,40 @@ right: 1rem;
     margin: 0;
     padding: 0;
     display: flex;
-    background-color: #232f3e;
+    background-color:transparent;
     align-items: center;
     gap: 0.5em;
+}
+
+.menu-button {
+    background-color: #37475a;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 2em;
+    height: 2em;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.menu-button .line {
+    background-color: white;
+    height: 0.2em;
+    width: 1.5em;
+    border-radius: 2px;
+}
+
+.menu-button .line {
+    background-color: white;
+    height: 0.2em;
+    width: 1.5em;
+    border-radius: 2px;
+}
+
+.barra_nav nav ul li {
+    position: relative;
 }
 
 nav ul {
