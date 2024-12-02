@@ -604,3 +604,16 @@ main ul li span {
 .crear-cuenta:hover {
     text-decoration: underline;
 }
+
+.logo-caja{
+    padding: 0;
+    border: none;
+    background: none;
+    display: inline-block;
+}
+
+.logo-caja img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
