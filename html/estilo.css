@@ -434,7 +434,7 @@ main ul {
 main ul li {
     width: 150px;
     height: 150px;
-    border: 1px solid #ddd;
+    border: none;
     background-color: #fff;
     display: flex;
     justify-content: center;
@@ -620,18 +620,3 @@ main ul li span {
 
 
 
-/* Sección Tu Cesta */
-
-.cesta-contenedor {
-    display: flex;
-    justify-content: space-between;
-    padding: 2rem;
-    gap: 2rem;
-}
-
-.lista-productos {
-    width: 70%;
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem; /* Separación entre los productos */
-}
