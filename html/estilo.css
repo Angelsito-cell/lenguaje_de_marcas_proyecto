@@ -903,45 +903,102 @@ html {
     box-shadow: 0 0 0.6rem 0.3rem rgba(255, 255, 0, 0.7);
 }
 
-.contenedor{
-    display: flex;
-    max-width: 75%;
-    margin: 1.25rem;
+
+
+.contenedor {
+    display: grid;
+    grid-template-columns: 40% 40% 20%;
+    gap: 2rem;
+    max-width: 75rem;
+    margin: 0 auto;
+    padding: 0;
     background-color: #fff;
-    border-radius: 0.6rem ;
-    box-shadow: 0 0 0.9rem rgba (0, 0, 0, 0.1);
 }
 
 .imagenes {
-
-    width: 40%;
-    padding: 1.25rem;
+    display: flex;;
+    gap: 1rem;
 }
 
 .imagen-principal img {
     width: 100%;
     height: auto;
-    border-radius: 0.6rem;
+    border-radius: 0.625rem;
 }
 
 .imagenes-secundarias {
-    margin-top: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
 }
 
 .imagenes-secundarias img {
-    width: 4rem;
-    height: 4rem;
-    margin-right: 0.6rem;
-    border-radius: 0.3rem;
+    width: 0.3125rem;
+    height: 0.3125rem;
+    border-radius: 0.3125rem;
     cursor: pointer;
-}
-
-.detalle-producto {
-    padding: 1.25rem;
-    width: 60%;
+    object-fit: cover;
 }
 
 .detalle-producto h1 {
     font-size: 2rem;
-    margin-bottom: 0.625rem;
+    margin-bottom: 1rem;
+    color: red;
+}
+
+.opiniones a {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+.opiniones a:hover {
+    text-decoration: underline;
+}
+
+.detalles {
+    margin-top: 1rem;
+    font-size: 1.1rem;
+    line-height: 1.5;
+}
+
+.acciones {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: flex-start;
+    justify-self: end;
+    border: 1px solid #ccc;
+    padding: 1rem;
+    border-radius: 0.625rem;
+    border: 1px solid #ccc;
+    background-color: #fff;
+}
+
+.comprar {
+    padding: 0.8rem 1.5rem;
+    font-size: 1.2rem;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 0.3rem;
+    cursor: pointer;
+    width: 100%;
+    text-align: center;
+}
+
+.comprar:hover {
+    background-color: #218838;
+}
+
+.envio-rapido {
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.envio-rapido input {
+    transform: scale(1.2);
+    cursor: pointer;
 }
