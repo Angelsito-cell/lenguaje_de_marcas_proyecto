@@ -1,5 +1,6 @@
  /* Estilos generales */
  body {
+    display: grid;
     background-color: black;
     background-size: cover; 
     background-position: center bottom;
@@ -7,8 +8,9 @@
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    height: 100%;
+    height: 100vh;
     box-sizing: border-box;
+
 }
 .fondo {
     background-size: cover;
@@ -623,7 +625,8 @@ main ul li span {
     justify-content: space-between;
     align-items: flex-start;
     padding: 1.25rem;
-    gap: 2rem
+    gap: 2rem;
+    margin-bottom: 3rem;
 }
 
 .lista-productos {
@@ -734,20 +737,29 @@ main ul li span {
 }
 
 .catalogo-productos {
-    display: grid;
+    display: flex;
+    place-items: center;
+    justify-content: space-between;
+    margin-top: 2rem;
+    position: relative;
     grid-template-columns: repeat(auto-fill, minmax(12rem, 1fr)); 
-    gap: 2rem;
+    gap: 1.5rem;
     padding: 1rem;
-    align-items: center;
+    margin-bottom: 3rem;
 }
 
 .item-producto {
+    flex: 0 0 auto;
     background-color: #fff;
     box-shadow: 0 0.3rem 0.6rem rgba(0, 0, 0, 0.1); 
     border-radius: 0.4rem;
     overflow: hidden;
     text-align: center;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
+    width: 12.5rem;
+    height: 15rem;
+    padding: 1rem;
+    box-sizing: border-box;
 }
 
 
@@ -779,6 +791,19 @@ main ul li span {
     margin-bottom: 0.8rem;
 }
 
+
+.flecha {
+    background-color: transparent;
+    border: none;
+    font-size: 2rem;
+    color: red;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.flecha:hover {
+    color: darkred;
+}
 
 
 
