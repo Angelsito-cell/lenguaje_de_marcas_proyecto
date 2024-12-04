@@ -814,11 +814,60 @@ main ul li span {
 }
 
 .vistos-recientemente .flecha {
-    font-size: 2rem; /* Tamaño de las flechas */
-    color: red; /* Color de las flechas */
+    font-size: 2rem;
+    color: red;
     border: none;
     background: none;
     cursor: pointer;
-    align-self: center; /* Alinea verticalmente las flechas */
+    align-self: center;
+}
+
+.producto-reciente {
+    flex: 0 0 auto;
+    max-width: 100px;
+    text-align: center;
+}
+
+.producto-reciente img {
+    width: 80%;
+    height: 80%;
+    object-fit: cover;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.ir-a-productos {
+    display: inline-block;
+    background-color: #ff0000;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.ir-a-productos:hover {
+    background-color: #cc0000;
+}
+
+.ir-hacia-arribba {
+    display: inline-block;
+    background-color: #ff0000;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.ir-hacia-arribba:hover {
+    background-color: #cc0000;
 }
 
