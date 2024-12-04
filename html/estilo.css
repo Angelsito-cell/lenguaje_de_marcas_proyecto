@@ -709,7 +709,77 @@ main ul li span {
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.boton-tramitar :hover {
-    background-color: darkgreen;
+.boton-tramitar:hover {
+    background-color: #013220;
 }
+
+.linea-roja{
+    text-align: center;
+    margin-top: 3em; 
+    margin-bottom: 3em; 
+    border: 0;
+    border-top: 5px solid red;
+    width: 95%;
+    margin: 0 auto;
+    display: block;
+}
+
+
+.tit-relacionado {
+    margin-top: 2rem;
+    font-size: 2rem;
+    color: red;
+    font-weight: bold;
+    text-align: center;
+}
+
+.catalogo-productos {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(12rem, 1fr)); 
+    gap: 2rem;
+    padding: 1rem;
+    align-items: center;
+}
+
+.item-producto {
+    background-color: #fff;
+    box-shadow: 0 0.3rem 0.6rem rgba(0, 0, 0, 0.1); 
+    border-radius: 0.4rem;
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+
+.item-producto:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0.8rem 1.6rem rgba(0, 0, 0, 0.2);
+}
+
+/* Imagen del producto */
+.item-producto img {
+    width: 80%;
+    margin: 0 auto;
+    aspect-ratio: 1 / 1;
+    object-fit: contain;
+    background-color: transparent;
+}
+
+/* Título del producto */
+.titulo-producto {
+    font-size: 0.9rem;
+    color: #333;
+    padding: 0.6rem;
+}
+
+/* Precio y detalles */
+.detalles-producto {
+    font-size: 0.8rem;
+    color: #555;
+    margin-bottom: 0.8rem;
+}
+
+
+
+
 
