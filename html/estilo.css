@@ -805,6 +805,20 @@ main ul li span {
     color: darkred;
 }
 
+.vistos-recientemente {
 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
 
+.vistos-recientemente .flecha {
+    font-size: 2rem; /* Tamaño de las flechas */
+    color: red; /* Color de las flechas */
+    border: none;
+    background: none;
+    cursor: pointer;
+    align-self: center; /* Alinea verticalmente las flechas */
+}
 
