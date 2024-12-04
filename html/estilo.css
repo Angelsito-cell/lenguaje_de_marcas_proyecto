@@ -902,3 +902,46 @@ html {
 .flecha-abajo.resaltado {
     box-shadow: 0 0 0.6rem 0.3rem rgba(255, 255, 0, 0.7);
 }
+
+.contenedor{
+    display: flex;
+    max-width: 75%;
+    margin: 1.25rem;
+    background-color: #fff;
+    border-radius: 0.6rem ;
+    box-shadow: 0 0 0.9rem rgba (0, 0, 0, 0.1);
+}
+
+.imagenes {
+
+    width: 40%;
+    padding: 1.25rem;
+}
+
+.imagen-principal img {
+    width: 100%;
+    height: auto;
+    border-radius: 0.6rem;
+}
+
+.imagenes-secundarias {
+    margin-top: 1.25rem;
+}
+
+.imagenes-secundarias img {
+    width: 4rem;
+    height: 4rem;
+    margin-right: 0.6rem;
+    border-radius: 0.3rem;
+    cursor: pointer;
+}
+
+.detalle-producto {
+    padding: 1.25rem;
+    width: 60%;
+}
+
+.detalle-producto h1 {
+    font-size: 2rem;
+    margin-bottom: 0.625rem;
+}
